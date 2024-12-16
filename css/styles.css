@@ -309,6 +309,7 @@ img {
   height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .third-section-icon-link:hover,
 .third-section-icon-link:focus {
@@ -361,7 +362,7 @@ img {
 }
 .fourth-section-item {
   width: 360px;
-  transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 .fourth-section-item:hover {
   box-shadow: 
