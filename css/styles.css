@@ -88,7 +88,7 @@ img {
   transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link ::after {
+.nav-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -144,6 +144,9 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  
   padding: 188px 0;
   max-width: 1440px;
   margin-left: auto;
@@ -175,6 +178,7 @@ img {
   margin-right: auto;
   border: none;
   border-radius: 4px;
+  transition: transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -203,9 +207,12 @@ img {
 }
 .second-section-icon-div {
   display: flex;
-  border: 1px solid var(--light-slate);
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4fd;
   border-radius: 4px;
-  width: 264px;
+  border: 1px solid;
+  margin-bottom: 8px;
   height: 112px;
 }
 .second-section-icon {
@@ -254,6 +261,7 @@ img {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);;
 }
 .third-section-title-item-item {
   padding: 32px 0;
@@ -278,8 +286,9 @@ img {
 }
 .third-section-icon-ul {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   justify-content: center;
+  transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .third-section-icon-li {
   width: 40px;
@@ -351,16 +360,20 @@ img {
 }
 .fourth-section-item {
   width: 360px;
-  transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+} 
 
 .fourth-section-item-tumba {
 position: relative;
 overflow: hidden;
 }
-.fourth-section-item:hover {box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
+.fourth-section-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
-.fourth-section-item:hover .fourth-section-item-tumba-text {
+.fourth-section-item:hover .fourth-section-item-tumba-text 
+{
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   0px 1px 1px rgba(46, 47, 66, 0.16),
   0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -385,7 +398,7 @@ transform: translateY(0%);}
   background-color: #2e2f42;
   padding: 100px 0;
 }
-.footer-content {
+.container.footer-content {
   display: flex;
   align-items: baseline;
 }
