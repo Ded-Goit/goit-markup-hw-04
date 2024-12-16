@@ -362,7 +362,7 @@ img {
 }
 .fourth-section-item {
   width: 360px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 .fourth-section-item:hover {
   box-shadow: 
